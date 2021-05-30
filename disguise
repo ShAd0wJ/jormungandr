@@ -1,0 +1,40 @@
+#!/bin/bash
+
+
+##Lines with two # marks are explianations of what things are,
+## and lines with only one are the optional settings. Don't change them
+##unless you know what you are doing.
+
+##kill and reset both wifi interface MAC addresses
+##unmark only if you want static mac addresses and static IPs
+#ifconfig wlan0 down && ifconfig wlan1 down
+#ifconfig wlan0 hw ether 00:11:22:33:44:55
+#ifconfig wlan1 hw ether 11:22:22:33:33:55
+#ifconfig wlan0 up && ifconfig wlan1 up
+
+##reset ip addresses of both interfaces to mask where data or hacks came from
+#ifconfig wlan0 194.27.11.5 netmask 255.255.255.0
+#ifconfig wlan1 102.88.124.67 netmask 255.255.255.0
+
+
+##set up dnsmask with application dnsmasq
+##Experimental
+#dnsmasq -C /etc/dnsmasq.d/dnsmasq.conf
+
+##run go spider with selective input from cmd
+echo Enter the nasme of the website that you want to crawl anonymously :
+read WEBSITE
+echo Enter the file that you want to save your findings to : 
+read OUTPUT
+
+## Python script to make computer or terminal completely anonymous by
+##changing the Mac address of interfaces and IP addresses of all interfaces
+sudo python3 main.py
+
+##pause to allow user to reestablish connection
+echo Make sure that you are connected to internet as reset may disconnect you
+echo When you are ready press enter on your keyboard :
+read CONTINUING
+
+##Runs the application gospider which is a web creawler
+gospider -s $WEBSITE -o $OUTPUT -u tor -t 3 -d 0 -K 10 --sitemap True -w -r -v
