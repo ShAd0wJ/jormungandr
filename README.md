@@ -28,3 +28,4 @@ connected domains and subdomains in connection to the main domain entered at the
 application, choice of finding 3rd party domains in connection with the target domain, choice
 of including subdomains, as well as the choice of having the application show or not show
 its progress with the verbose option(currently set to True). 
+# jormungandr
