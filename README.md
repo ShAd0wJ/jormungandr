@@ -31,8 +31,7 @@ To install the commandline tools needed for Jormungandr run the following comman
 
 Running Jormungandr:
 
-In order to run the app you must first change the permissions of both the python file main
-and the bash file disguise:
+In order to run the app you must first change the permissions of both the python file main:
 
 "sudo chmod u+x main.py && sudo chmod u+x jormungandr"
 
