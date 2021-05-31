@@ -1,0 +1,77 @@
+#!/usr/bin/env python
+
+import subprocess
+import re
+
+#cloaking of the users IP and MAC address(es)
+def cloak():
+    subprocess.call("sudo python3 main.py", shell=True)
+    pause = input("remember to stop and check that your machine is reconnected to the internet as masking could cause disconnect")
+
+#Musts for the program to run
+def gospider():
+    site = input("Enter the domain you want to explore: ")
+    folderOut = input("Enter the folder you want to save your findings to: ")
+    platform = input("what platform do you want to use for the exploration: ")
+
+    #optional, not needed for the program to run but does help wide or narrow the search
+    print("Do you want to run multiple threads? ")
+    choice1 = input("Your answer: ")
+    if choice1 == "y":
+        threads = "-t " + input("How many threads would you like to run in parellel(int): ")
+    else:
+        threads = ""
+
+    print("Do you want a depth recursion deeper than 1? ")
+    choice2 = input("Your answer: ")
+    if choice2 == "y":
+        print("putting 0 means infinite")
+        depth = "-d " + input("How many recursions do you want to perform(int): ")
+    else:
+        depth = ""
+
+    print("Do you want a random delay? ")
+    choice3 = input("Your answer: ")
+    if choice3 == "y":
+        delay = "-K " + input("Enter the start for random delay(int): ")
+    else:
+        delay = ""
+
+    print("Do you want to see if Jormungandr can map the domains sitemap? ")
+    print("note that this may cause no output into the txt document used to explore the domain")
+    choice4 = input("Your answer: ")
+    if choice4 == "y":
+        sitemap = "--sitemap True"
+    else:
+        sitemap = ""
+
+    print("Do you want to include subdomains in the search? ")
+    choice5 = input("Your answer: ")
+    if choice5 == "y":
+        subs = "-w"
+    else:
+        subs = ""
+
+    print("Do you want to include other urls in the search in connection to the domain being explored? ")
+    choice6 = input("Your answer: ")
+    if choice6 == "y":
+        exurl = "-r"
+    else:
+        exurl = ""
+
+    print("see it all happen? ")
+    choice7 = input("Your answer: ")
+    if choice7 == "y":
+        verbose = "-v"
+    else:
+        verbose = ""
+
+    #execution of the main program with all the input from the user
+    subprocess.call("gospider -s " + site + " -o " + folderOut + " -u " + platform + " " + threads + " " + depth + " " + delay + " " + sitemap + " " + subs + " " + exurl + " " + verbose, shell=True)
+
+def reminder():
+    print("process has completed and has been saved to folder entered above")
+
+cloak()
+gospider()
+reminder()

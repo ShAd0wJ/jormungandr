@@ -1,0 +1,35 @@
+[robots] - https://www.fultonbank.com/About-Us/Its-Personal
+[robots] - https://www.fultonbank.com/Online-Banking-Sign-Out
+[robots] - https://www.fultonbank.com/employeeloans
+[robots] - https://www.fultonbank.com/Personal/Banking/account-opening
+[robots] - https://www.fultonbank.com/Small-Business/Business-Services/Banking-at-Work/bayada-welcome
+[robots] - https://www.fultonbank.com/Small-Business/Business-Services/Banking-at-Work/workplace-banking-welcome
+[robots] - https://www.fultonbank.com/About-Fulton-Bank/notifications
+[robots] - https://www.fultonbank.com/About-Fulton-Bank/fc-schedule-updates
+[subdomains] - www.fultonbank.com
+[subdomains] - ww7.fultonbank.com
+[subdomains] - globallink.fultonbank.com
+[subdomains] - investor.fultonbank.com
+[url] - [code-200] - https://www.fultonbank.com
+[form] - https://www.fultonbank.com
+[javascript] - https://www.fultonbank.com/layouts/system/VisitorIdentification.js
+[javascript] - https://code.jquery.com/jquery-3.1.1.min.js
+[javascript] - https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js
+[javascript] - https://www.fultonbank.com/library/js/svg4everybody.min.js
+[javascript] - https://www.fultonbank.com/library/js/script.js
+[linkfinder] - [from: https://www.fultonbank.com/layouts/system/VisitorIdentification.js] - /layouts/system
+[linkfinder] - [from: https://www.fultonbank.com/layouts/system/VisitorIdentification.js] - /VIChecker.aspx?tstamp=
+[linkfinder] - [from: https://www.fultonbank.com/layouts/system/VisitorIdentification.js] - text/css
+[linkfinder] - [from: https://www.fultonbank.com/layouts/system/VisitorIdentification.js] - /layouts/system/Visitor
+[linkfinder] - [from: https://www.fultonbank.com/layouts/system/VisitorIdentification.js] - CSS.aspx?
+[linkfinder] - [from: https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js] - text/javascript
+[linkfinder] - [from: https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js] - application/json
+[linkfinder] - [from: https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js] - text/ng-template
+[linkfinder] - [from: https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js] - M/d/yy
+[linkfinder] - [from: https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js] - text/css
+[url] - [code-200] - https://www.fultonbank.com/404?item=%2ftext%2fng-template&user=default%5cAnonymous&site=fulton
+[form] - https://www.fultonbank.com/404?item=%2ftext%2fng-template&user=default%5cAnonymous&site=fulton
+[url] - [code-200] - https://www.fultonbank.com/404?item=%2fapplication%2fjson&user=default%5cAnonymous&site=fulton
+[form] - https://www.fultonbank.com/404?item=%2fapplication%2fjson&user=default%5cAnonymous&site=fulton
+[url] - [code-200] - https://www.fultonbank.com/404?item=%2fm%2fd%2fyy&user=default%5cAnonymous&site=fulton
+[form] - https://www.fultonbank.com/404?item=%2fm%2fd%2fyy&user=default%5cAnonymous&site=fulton
